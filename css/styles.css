@@ -112,7 +112,8 @@ a {
 
 /* Type of work */
 /* Team */
-.title {
+.work-title,
+.team-title {
   color: var(--title-color);
   font-weight: 700;
   font-size: 36px;
@@ -128,7 +129,7 @@ a {
   text-align: center;
 }
 
-.text {
+.team-text {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.18;
@@ -165,7 +166,7 @@ a {
   letter-spacing: 0.06em;
 }
 
-portfolio-text {
+.portfolio-text {
   color: var(--text-color);
   font-size: 16px;
   line-height: 1.87;
