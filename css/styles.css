@@ -66,7 +66,6 @@ a {
   line-height: 1.19;
 
   margin-bottom: 0px;
-  margin-right: 93px;
 }
 
 .web {
@@ -77,6 +76,7 @@ a {
 /* Site nav */
 .site-nav {
   display: flex;
+  margin-left: 93px;
 }
 
 .site-nav .nav-item + .nav-item {
@@ -90,6 +90,7 @@ a {
   line-height: 1.14;
   letter-spacing: 0.02em;
 
+  display: block;
   margin-bottom: 0px;
 }
 
@@ -126,6 +127,8 @@ a {
 .hero {
   background-color: var(--secondary-color);
   text-align: center;
+  height: 600px;
+  margin-top: 0;
 }
 
 .hero-title {
@@ -138,37 +141,42 @@ a {
 
   margin-top: 0;
   margin-bottom: 30px;
+  padding-top: 200px;
 }
 
 /* Button */
 .hero-button {
   background-color: var(--accent-color);
   color: var(--white-color);
-  cursor: pointer;
   font-weight: 700;
   font-size: 16px;
   line-height: 1.87;
-  align-items: center;
   text-align: center;
   letter-spacing: 0.06em;
 
+  display: block;
+  cursor: pointer;
   border-radius: 4px;
   margin-right: auto;
   margin-left: auto;
   padding: 10px 32px;
   min-width: 200px;
+  border-color: transparent;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
 /* Features */
 .hide {
-  visibility: hidden;
+  /* visibility: hidden; */
   display: none;
 }
 
 .features {
   display: flex;
-  min-width: 270px;
+  width: 1170px;
+}
+.features .features-list {
+  width: 270px;
 }
 
 .features-title {
@@ -178,8 +186,8 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
 
-  margin: 0, 30px, 10px, 0;
-  padding: 0, 30px, 0, 0;
+  /* margin-top: 0;
+  margin-bottom: 10px; */
 }
 
 .features-text {
@@ -187,8 +195,8 @@ a {
   font-size: 14px;
   line-height: 1.71;
 
-  margin: 0, 30px, 0, 0;
-  padding: 0, 30px, 0, 0;
+  /* margin: 0, 30px, 0, 0;
+  padding: 0, 30px, 0, 0; */
 }
 
 /* Type of work */
@@ -274,6 +282,34 @@ a {
 }
 
 /* Portfolio */
+.card-set {
+  display: flex;
+  flex-wrap: wrap;
+  margin: -15px;
+  padding: 0;
+}
+
+.card-set > .card-item {
+  width: 370px;
+  margin: 15px;
+  border: 1px solid #eeeeee;
+
+  /* flex-basis: calc(100 / 3 - 30px); */
+  /* width: calc((100% - 60px) / 3); */
+  /* margin-right: 30px; */
+  /* margin-bottom: 30px; */
+}
+
+.portfolio-card > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+.card-content {
+  padding: 20px 24px;
+}
+
 .portfolio-title {
   color: var(--title-color);
   font-weight: 700;
