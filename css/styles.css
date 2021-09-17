@@ -8,10 +8,6 @@
   --background-color: #f5f4fa;
 }
 
-.box {
-  outline: 2px solid green;
-}
-
 /* HTML box */
 html {
   box-sizing: border-box;
@@ -29,7 +25,7 @@ html {
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  background-color: skyblue;
+  outline: 1px solid green;
 }
 
 /* Section */
@@ -57,6 +53,10 @@ a {
 }
 
 /* Logo */
+.navigation {
+  display: flex;
+  align-items: center;
+}
 
 .logo-header {
   color: var(--logo-color);
@@ -65,7 +65,7 @@ a {
   font-size: 26px;
   line-height: 1.19;
 
-  margin-bottom: 25px;
+  margin-bottom: 0px;
   margin-right: 93px;
 }
 
@@ -75,7 +75,15 @@ a {
 }
 
 /* Site nav */
-.site-nav a {
+.site-nav {
+  display: flex;
+}
+
+.site-nav .nav-item + .nav-item {
+  margin-left: 50px;
+}
+
+.site-nav .nav-link {
   color: var(--title-color);
   font-weight: 500;
   font-size: 14px;
@@ -85,28 +93,31 @@ a {
   margin-bottom: 0px;
 }
 
-.site-nav a:hover,
-.site-nav a:focus,
-.contacts a:hover,
-.contacts a:focus {
+.site-nav .nav-link:hover,
+.site-nav .nav-link:focus,
+.contacts .link:hover,
+.contacts .link:focus {
   color: var(--accent-color);
 }
 
 /* Contacts */
-.contacts a {
+.contacts .item + .item {
+  margin-left: 50px;
+}
+
+.contacts {
+  display: flex;
+  margin-top: 0;
+  margin-bottom: 0;
+  margin-left: auto;
+}
+
+.contacts .link {
   color: var(--text-color);
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
-
-  margin-bottom: 0px;
-}
-
-.contacts {
-  display: flex;
-  margin-left: auto;
-  margin: 0, 0, 30px, 0;
 }
 
 /* Стили для index.html */
