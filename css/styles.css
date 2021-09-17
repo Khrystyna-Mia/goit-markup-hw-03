@@ -12,6 +12,7 @@
   outline: 2px solid green;
 }
 
+/* HTML box */
 html {
   box-sizing: border-box;
 }
@@ -22,18 +23,22 @@ html {
   box-sizing: inherit;
 }
 
+/* Container */
 .container {
   width: 1200px;
-  margin: 0 auto;
+  margin: auto;
   padding-right: 15px;
   padding-left: 15px;
+  background-color: skyblue;
 }
 
+/* Section */
 .section {
   padding-top: 94px;
   padding-bottom: 94px;
 }
 
+/* BODY */
 body {
   background-color: var(--white-color);
   color: var(--text-color);
@@ -225,14 +230,28 @@ a {
 
 /* Portfolio buttons */
 .filter {
-  background-color: var(--background-color);
   color: var(--title-color);
-  cursor: pointer;
   font-weight: 500;
   font-size: 16px;
   line-height: 1.62;
   text-align: center;
   letter-spacing: 0.03em;
+
+  display: flex;
+  justify-content: center;
+}
+
+.filter .btn {
+  margin-top: 94px;
+  margin-right: 8px;
+}
+
+.btn {
+  border-radius: 4px;
+  padding: 6px 22px;
+  border-color: transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .filter :hover,
@@ -240,6 +259,7 @@ a {
   background-color: var(--accent-color);
   color: var(--white-color);
   cursor: pointer;
+  border-radius: 4px;
 }
 
 /* Portfolio */
