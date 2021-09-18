@@ -250,8 +250,6 @@ a {
   flex-wrap: wrap;
   margin: -15px;
   padding: 0;
-  /* margin-bottom: 0;
-  justify-content: space-between; */
 }
 
 .team-list > .team-item {
@@ -333,7 +331,7 @@ a {
   padding: 0;
 }
 
-/* calc((100% - к-во маржинов в строке *значение маржина) / к-во элементов в строке */
+/* calc((100% - к-во маржинов в строке * значение маржина) / к-во элементов в строке */
 
 /* flex-basis: calc(100 / 3 - 30px); 
   или
@@ -374,8 +372,13 @@ a {
 }
 
 /* Footer */
-footer {
+.page-footer {
   background-color: var(--secondary-color);
+}
+
+.logo-footer,
+.contacts-footer {
+  display: block;
 }
 
 .logo-footer {
@@ -398,6 +401,9 @@ footer {
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  margin: 0;
+  padding: 0;
 }
 
 .contacts-footer a:hover,
