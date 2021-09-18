@@ -52,6 +52,10 @@ a {
   text-decoration: none;
 }
 
+.hide {
+  display: none;
+}
+
 /* Logo */
 .navigation {
   display: flex;
@@ -166,17 +170,20 @@ a {
 }
 
 /* Features */
-.hide {
-  /* visibility: hidden; */
-  display: none;
-}
-
 .features {
   display: flex;
-  width: 1170px;
+  flex-wrap: wrap;
+  margin-top: 0;
+  margin-bottom: 94px;
+  margin-left: -30px;
 }
-.features .features-list {
-  width: 270px;
+
+.features > .features-list {
+  flex-basis: calc(100% / 4 - 30px);
+}
+
+.features > .features-list + .features-list {
+  margin-left: 30px;
 }
 
 .features-title {
@@ -186,8 +193,8 @@ a {
   line-height: 1.14;
   text-transform: uppercase;
 
-  /* margin-top: 0;
-  margin-bottom: 10px; */
+  margin-top: 0;
+  margin-bottom: 10px;
 }
 
 .features-text {
@@ -195,21 +202,34 @@ a {
   font-size: 14px;
   line-height: 1.71;
 
-  /* margin: 0, 30px, 0, 0;
-  padding: 0, 30px, 0, 0; */
+  margin-top: 0;
+  margin-bottom: 0;
 }
 
 /* Type of work */
-/* Team */
 .work-list {
   display: flex;
   margin-top: 0;
-  margin-bottom: 0;
-  padding-bottom: 94px;
-  justify-content: space-between;
+  margin-bottom: 94px;
+  padding-left: 0;
 }
 
-.work-title,
+.work-list > .work-item + .work-item {
+  margin-left: 30px;
+}
+
+.work-title {
+  color: var(--title-color);
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+
+  margin-top: 0;
+  margin-bottom: 50px;
+}
+
+/* Team */
 .team-title {
   color: var(--title-color);
   font-weight: 700;
@@ -224,10 +244,29 @@ a {
 .team {
   background-color: var(--background-color);
 }
+
 .team-list {
   display: flex;
-  margin-bottom: 0;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin: -15px;
+  padding: 0;
+  /* margin-bottom: 0;
+  justify-content: space-between; */
+}
+
+.team-list > .team-item {
+  width: 270px;
+  margin: 15px;
+  background-color: var(--white-color);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14),
+    0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+
+.team-img > img {
+  display: block;
+  max-width: 100%;
+  height: auto;
 }
 
 .employee {
@@ -236,6 +275,9 @@ a {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  margin-top: 30px;
+  margin-bottom: 10px;
 }
 
 .team-text {
@@ -243,6 +285,8 @@ a {
   font-size: 16px;
   line-height: 1.18;
   text-align: center;
+
+  margin-bottom: 30px;
 }
 
 /* Стили для portfolio.html*/
@@ -289,15 +333,19 @@ a {
   padding: 0;
 }
 
+/* calc((100% - к-во маржинов в строке *значение маржина) / к-во элементов в строке */
+
+/* flex-basis: calc(100 / 3 - 30px); 
+  или
+  width: calc((100% - 60px) / 3);
+
+  margin-right: 30px; 
+  margin-bottom: 30px; */
+
 .card-set > .card-item {
   width: 370px;
   margin: 15px;
   border: 1px solid #eeeeee;
-
-  /* flex-basis: calc(100 / 3 - 30px); */
-  /* width: calc((100% - 60px) / 3); */
-  /* margin-right: 30px; */
-  /* margin-bottom: 30px; */
 }
 
 .portfolio-card > img {
