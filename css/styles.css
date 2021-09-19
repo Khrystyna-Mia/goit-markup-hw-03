@@ -6,6 +6,7 @@
   --accent-color: #2196f3;
   --secondary-color: #2f303a;
   --background-color: #f5f4fa;
+  --border-color: #ececec;
 }
 
 /* HTML box */
@@ -25,7 +26,6 @@ html {
   margin: auto;
   padding-right: 15px;
   padding-left: 15px;
-  outline: 1px solid green;
 }
 
 /* Section */
@@ -54,6 +54,11 @@ a {
 
 .hide {
   display: none;
+}
+
+/* Header */
+.page-header {
+  border: 1px solid var(--border-color);
 }
 
 /* Logo */
@@ -329,21 +334,13 @@ a {
   flex-wrap: wrap;
   margin: -15px;
   padding: 0;
+  /* flex-basis: calc(100 / 3 - 30px); */
 }
-
-/* calc((100% - к-во маржинов в строке * значение маржина) / к-во элементов в строке */
-
-/* flex-basis: calc(100 / 3 - 30px); 
-  или
-  width: calc((100% - 60px) / 3);
-
-  margin-right: 30px; 
-  margin-bottom: 30px; */
 
 .card-set > .card-item {
   width: 370px;
   margin: 15px;
-  border: 1px solid #eeeeee;
+  border: 1px solid var(--border-color);
 }
 
 .portfolio-card > img {
@@ -374,11 +371,7 @@ a {
 /* Footer */
 .page-footer {
   background-color: var(--secondary-color);
-}
-
-.logo-footer,
-.contacts-footer {
-  display: block;
+  padding: 60px 0;
 }
 
 .logo-footer {
@@ -389,24 +382,31 @@ a {
   line-height: 1.19;
 }
 
+.contacts-footer {
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+.contacts-footer .footer-link:hover,
+.contacts-footer .footer-link:focus {
+  color: var(--accent-color);
+}
+
 .location {
   color: var(--white-color);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
+
+  margin-top: 20px;
 }
 
-.contacts-footer a {
+.contacts-footer .footer-link {
   color: rgba(255, 255, 255, 0.6);
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
 
-  margin: 0;
-  padding: 0;
-}
-
-.contacts-footer a:hover,
-.contacts-footer a:focus {
-  color: var(--accent-color);
+  display: inline-block;
+  margin-bottom: 9px;
 }
