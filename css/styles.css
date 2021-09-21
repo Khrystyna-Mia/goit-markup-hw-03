@@ -65,6 +65,7 @@ a {
 .navigation {
   display: flex;
   align-items: center;
+  height: 80px;
 }
 
 .logo-header {
@@ -174,6 +175,12 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
+.hero-button:hover {
+  border-radius: 4px;
+  background-color: #188ce8;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
 /* Features */
 .features {
   display: flex;
@@ -215,7 +222,8 @@ a {
 .work-list {
   display: flex;
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0px;
+  padding-bottom: 94px;
   padding-left: 0;
 }
 
@@ -232,6 +240,7 @@ a {
 
   margin-top: 0;
   margin-bottom: 50px;
+  padding-top: 94px;
 }
 
 /* Team */
@@ -359,6 +368,8 @@ a {
   font-size: 18px;
   line-height: 2;
   letter-spacing: 0.06em;
+
+  margin-top: 20px;
 }
 
 .portfolio-text {
@@ -366,6 +377,9 @@ a {
   font-size: 16px;
   line-height: 1.87;
   letter-spacing: 0.03em;
+
+  margin-top: 4px;
+  margin-bottom: 20px;
 }
 
 /* Footer */
