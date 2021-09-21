@@ -370,6 +370,7 @@ a {
   letter-spacing: 0.06em;
 
   margin-top: 20px;
+  margin-bottom: 4px;
 }
 
 .portfolio-text {
@@ -378,7 +379,6 @@ a {
   line-height: 1.87;
   letter-spacing: 0.03em;
 
-  margin-top: 4px;
   margin-bottom: 20px;
 }
 
