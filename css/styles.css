@@ -52,6 +52,12 @@ a {
   text-decoration: none;
 }
 
+img {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
 .hide {
   display: none;
 }
@@ -175,7 +181,8 @@ a {
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
-.hero-button:hover {
+.hero-button:hover,
+.hero-button:focus {
   border-radius: 4px;
   background-color: #188ce8;
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -186,7 +193,7 @@ a {
   display: flex;
   flex-wrap: wrap;
   margin-top: 0;
-  margin-bottom: 94px;
+  margin-bottom: 0;
   margin-left: -30px;
 }
 
@@ -275,11 +282,11 @@ a {
   border-radius: 0px 0px 4px 4px;
 }
 
-.team-img > img {
+/* .team-img > img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 .employee {
   color: var(--title-color);
@@ -352,11 +359,11 @@ a {
   border: 1px solid var(--border-color);
 }
 
-.portfolio-card > img {
+/* .portfolio-card > img {
   display: block;
   max-width: 100%;
   height: auto;
-}
+} */
 
 .card-content {
   padding: 20px 24px;
@@ -369,8 +376,9 @@ a {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin-top: 20px;
-  margin-bottom: 4px;
+  margin: 0;
+  padding-top: 20px;
+  padding-bottom: 4px;
 }
 
 .portfolio-text {
@@ -379,7 +387,8 @@ a {
   line-height: 1.87;
   letter-spacing: 0.03em;
 
-  margin-bottom: 20px;
+  margin: 0;
+  padding-bottom: 20px;
 }
 
 /* Footer */
