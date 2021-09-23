@@ -226,11 +226,14 @@ img {
 }
 
 /* Type of work */
+.work {
+  padding-top: 0;
+}
+
 .work-list {
   display: flex;
   margin-top: 0;
   margin-bottom: 0px;
-  padding-bottom: 94px;
   padding-left: 0;
 }
 
@@ -247,7 +250,6 @@ img {
 
   margin-top: 0;
   margin-bottom: 50px;
-  padding-top: 94px;
 }
 
 /* Team */
@@ -377,7 +379,7 @@ img {
   letter-spacing: 0.06em;
 
   margin: 0;
-  padding-top: 20px;
+  padding-top: 0;
   padding-bottom: 4px;
 }
 
@@ -388,7 +390,7 @@ img {
   letter-spacing: 0.03em;
 
   margin: 0;
-  padding-bottom: 20px;
+  padding-bottom: 0;
 }
 
 /* Footer */
